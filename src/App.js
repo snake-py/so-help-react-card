@@ -1,23 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
+import CardItem from "./components/CardItem";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+       <CardItem
+          src='https://static.news.bitcoin.com/wp-content/uploads/2018/04/koinex-banner.png'
+          text='my text'
+          label='Adventure'
+          path='/products'
+          description={["someText1", "someText2", "someText3", "someText4"]}
+        />
     </div>
   );
 }
